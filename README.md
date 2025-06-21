@@ -65,6 +65,73 @@
 - Internet access for API and email service
 
 ---
+
+## 📁 Project Structure
+
+- Frontend -> # React.js frontend client
+- Backend ->  # Node.js + Express backend server
+- Readme.md
+
+---
+
+## 🔧 Prerequisites
+
+Ensure you have the following installed on your system:
+
+- ✅ Node.js (v18+)
+- ✅ npm (Node package manager)
+- ✅ MongoDB Atlas account or MongoDB installed locally
+- ✅ VS Code or any code editor
+- ✅ Internet access (for OTP email and Edamam API)
+
+---
+# 🚀 How to Run – Recipe Finder 
+
+The project is built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) with secure OTP-based authentication and API-integrated recipe search.
+
+- Backend setup
+   - Navigate to the backend folder:
+   ```bash
+   cd recipe-finder/backend
+   ...
+   - Start the backend server
+   ```bash
+   node backend.js
+   ...
+   - Server runs at
+   ```bash
+   http://localhost:5000
+   ...
+
+- Frontend Setup
+   - Open a new terminal and navigate to the frontend folder
+   ```bash
+   cd recipe-finder/frontend
+   ...
+   - Install frontend dependencies
+   ```bash
+   npm install
+   ...
+   - Start the React development server
+   ```bash
+   npm start
+   ...
+   - Application will run at
+   ```bash
+   http://localhost:3000
+   ...
+---
+## 📌 You're Ready!
+🎉 The Recipe Finder app is now live on your local machine. You can:
+
+-Register/login with OTP
+
+-Search for recipes using keywords or filters
+
+-Add/edit/delete recipes from the admin panel
+
+---
+
 ## 🔮 Future Enhancements
 ✅ Personalized user profiles with recipe bookmarks
 
