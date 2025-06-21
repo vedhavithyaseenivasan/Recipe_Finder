@@ -1,0 +1,147 @@
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the contents horizontally */
+    justify-content: space-between; /* Ensures even spacing of elements */
+    text-align: center; /* Centers the text within the card */
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c2c; /* Dark theme for cards */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 350px; /* Fixed width for uniform size */
+    height: 450px; /* Fixed height for uniform size */
+    margin: auto; /* Centers the card itself in the grid */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.recipe-title {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents title from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if the title is too long */
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 300px;
+    height: 150px; /* Fixed image height */
+    object-fit: cover; /* Ensures the image fits the container without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-calories,
+.recipe-time {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #bbb;
+}
+
+.btn-primary {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly lighter transparency */
+    backdrop-filter: blur(12px); /* More pronounced blur effect */
+    z-index: 1040; /* Ensure it's above other content but below the modal */
+    transition: opacity 0.3s ease; /* Smooth fade-in/fade-out effect */
+}
+
+/* Optional: Styling the modal content with modern elements */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 12px; /* Rounded corners for a smooth, modern look */
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Ensure modal isn't too wide */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    animation: slideIn 0.4s ease-out; /* Animation for the modal */
+}
+
+/* Modal animation (slide-in effect) */
+@keyframes slideIn {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Close button styles with refined interaction */
+.modal-header .close {
+    position: absolute; /* Keep it at the top-right corner */
+    right: 1rem; /* Align it to the right */
+    top: 1rem; /* Slightly offset from the top */
+    font-size: 1.7rem; /* Slightly larger for visibility */
+    font-weight: bold; /* Make the button text bold */
+    color: #333; /* Dark color for better contrast */
+    background: none; /* Remove background */
+    border: none; /* No border */
+    cursor: pointer; /* Add pointer cursor to indicate clickable element */
+    transition: transform 0.3s ease, color 0.3s ease; /* Add hover effect */
+}
+
+/* Close button hover effect */
+.modal-header .close:hover {
+    transform: rotate(90deg); /* Subtle rotate effect */
+    color: #e74c3c; /* Red color on hover for attention */
+}
+
+/* Optional: Modal content text styling */
+.modal-body {
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Optional: Modal footer styling */
+.modal-footer {
+    text-align: right;
+    padding-top: 20px;
+}
+
+/* Optional: Add a primary action button with modern style */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+}
+
+.btn-primary:active {
+    background-color: #2980b9;
+    transform: translateY(0); /* Reset after click */
+}
+
+/* Optional: Make modal more responsive on smaller screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ensure modal doesn't overflow on smaller screens */
+    }
+
+    .modal-header .close {
+        font-size: 1.4rem; /* Smaller close button for mobile */
+    }
+
+    .btn-primary {
+        width: 100%; /* Make button full width on mobile */
+    }
+}

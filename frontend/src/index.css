@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif; /* Clean and modern font for body */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa; /* Soft light background for a calm aesthetic */
+  color: #333; /* Dark gray text for readability */
+  line-height: 1.6;
+}
+
+/* Code Styling */
+code {
+  font-family: 'Fira Mono', 'Courier New', monospace; /* Fira Mono gives a unique code aesthetic */
+  font-size: 1.1rem;
+  background-color: #2d2d2d; /* Darker code background */
+  color: #f1f1f1; /* Light text color for contrast */
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif; /* Elegant serif font for headings */
+  font-weight: 700; /* Bold for emphasis */
+  color: #444; /* Softer dark color for less harsh contrast */
+  letter-spacing: 1.5px;
+  text-transform: capitalize; /* Subtle effect for headings */
+  text-align: center;
+}
+
+/* Specific styling for h1 */
+h1 {
+  font-size: 3rem;
+  color: #2e3a59; /* Dark blue color for headings to add sophistication */
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Subtle fade-up animation for headings */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Paragraph Styling */
+p {
+  font-family: 'Open Sans', sans-serif; /* Open Sans for readable body text */
+  font-size: 1.1rem;
+  color: #5a5a5a; /* Softer text color */
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: justify; /* Justified text for a more polished look */
+}
+
+/* Links Styling */
+a {
+  font-family: 'Poppins', sans-serif; /* Consistent with the body font */
+  color: #4a90e2; /* Vibrant blue for links to stand out */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #0a58ca; /* Darker shade of blue for hover effect */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Button Styling */
+button {
+  background-color: #5e3e95; /* Unique purple for a modern touch */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; /* Matching the font for consistency */
+  border-radius: 30px; /* Rounded edges for a more sleek button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #703c9d; /* Slightly darker purple on hover */
+  transform: scale(1.05); /* Button zoom effect on hover */
+}
+
+/* Add a creative "glow" effect on hover for buttons */
+button:active {
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6);
+}

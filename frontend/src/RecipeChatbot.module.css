@@ -1,0 +1,154 @@
+/* RecipeChatbot.module.css */
+
+/* Container styles */
+.chatbotContainer {
+    width: 100%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffffff, #bcc0ff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Chat log container */
+  .chatLog {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  /* Animate fade in */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Animate chat log slide */
+  @keyframes slideIn {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Message styling */
+  .message {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 18px;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+  }
+  
+  .userMessage {
+    background: linear-gradient(145deg, #0011ff, #ff0000);
+    text-align: right;
+    color: white;
+    transform: translateX(10px);
+  }
+  
+  .botMessage {
+    background: linear-gradient(145deg, #949bff, #c46666);
+    text-align: left;
+    color: #f5f5f5;
+    transform: translateX(-10px);
+  }
+  
+  /* Input and send button container */
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  /* Chat input styling */
+  .chatInput {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .chatInput:focus {
+    border: 2px solid #ff6a00;
+    box-shadow: 0 5px 20px rgba(255, 106, 0, 0.4);
+  }
+  
+  /* Send button styling */
+  .sendButton {
+    position: absolute;
+    right: 0;
+    padding: 15px 30px;
+    background-color: #ffb27b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    margin-right: 10px;
+  }
+  
+  .sendButton:hover {
+    background-color: hsl(331, 100%, 96%);
+    transform: scale(1.1);
+  }
+  
+  .sendButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Scrollbar styling */
+  .chatLog::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chatLog::-webkit-scrollbar-thumb {
+    background-color: #ff6a00;
+    border-radius: 10px;
+  }
+  
+  .chatLog::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  /* Floating Action Button */
+  .floatingButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #33cc33;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .floatingButton:hover {
+    transform: scale(1.2);
+  }
+  
+  .floatingButton:active {
+    transform: scale(0.9);
+  }
+  
+  

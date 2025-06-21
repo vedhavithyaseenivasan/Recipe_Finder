@@ -1,0 +1,70 @@
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically centers the elements */
+  margin-bottom: 30px; /* Increased margin for more space */
+  padding: 10px;
+}
+
+/* Search Input */
+.search-input {
+  padding: 12px 20px; /* Match the padding of the search button */
+  border: 2px solid #9b59b6; /* Purple border matching the button color */
+  border-radius: 30px 0 0 30px; /* Rounded corners on the left side */
+  width: 300px; /* Fixed width for the input */
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+  height: 48px; /* Set a consistent height */
+}
+
+/* Focus Effect for Search Input */
+.search-input:focus {
+  border-color: #8e44ad; /* Darker purple border when focused */
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.3); /* Subtle glow effect with the darker purple */
+  outline: none; /* Removes default outline */
+}
+
+/* Search Button */
+.search-button {
+  padding: 12px 20px; /* Match the padding of the search input */
+  border: none;
+  border-radius: 0 30px 30px 0; /* Rounded corners on the right side */
+  background-color: #9b59b6; /* Purple color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover and click effects */
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3); /* Subtle shadow for depth */
+  height: 48px; /* Set a consistent height */
+}
+
+/* Hover Effect for Search Button */
+.search-button:hover {
+  background-color: #8e44ad; /* Darker purple */
+  transform: translateY(-3px) scale(1.05); /* Lifts and enlarges button */
+  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4); /* Stronger shadow on hover */
+}
+
+/* Active Effect for Search Button */
+.search-button:active {
+  transform: translateY(2px) scale(0.98); /* Pushes the button down on click */
+  box-shadow: 0 2px 5px rgba(155, 89, 182, 0.2); /* Smaller shadow on active */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    margin-bottom: 20px;
+  }
+
+  .search-input,
+  .search-button {
+    width: 80%; /* Make both elements match the container width on small screens */
+  }
+
+  .search-button {
+    margin-top: 10px; /* Add space between input and button on mobile */
+  }
+}

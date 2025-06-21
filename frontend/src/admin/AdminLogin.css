@@ -1,0 +1,114 @@
+/* AdminLogin.css */
+
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Updated font for a more modern feel */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant blue and purple gradient */
+  background-size: 400% 400%; /* Stretch the gradient for a more dynamic effect */
+  animation: gradientAnimation 10s ease infinite; /* Smooth animation for gradient */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient animation to give the background more dynamic movement */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white for a soft frosted effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+/* Form field styling */
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focused input fields */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #6a11cb; /* Purple color for focus effect */
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Soft glowing effect */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2575fc; /* Bright blue color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  font-weight: 600; /* Make the button text bold */
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #1d5bbf; /* Darker blue on hover */
+}
+
+/* Error message styling */
+p {
+  margin-top: 1rem;
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

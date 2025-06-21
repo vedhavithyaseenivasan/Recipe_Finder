@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark theme */
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #bb86fc; /* Purple for accent */
+    font-size: 2.5rem;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background for content area */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.main-container:hover {
+    background-color: #232323; /* Slight hover effect */
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.recipe {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.recipe-card {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #2c2c2c; /* Dark theme for cards */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    background-color: #383838; /* Slightly brighter hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    background-color: #bb86fc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #9b59f7; /* Darker purple */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.recipe-card {
+    animation: fadeIn 0.5s ease-in-out;
+}

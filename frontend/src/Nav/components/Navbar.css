@@ -1,0 +1,63 @@
+/* Navbar styling */
+.navbar-brand-custom {
+  color: #ff7b54; /* Brand color */
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+  text-align: left; /* Default position */
+}
+
+.navbar-brand-custom:hover {
+  color: #ffab76;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand-custom {
+    text-align: center; /* Center the brand name on mobile */
+    width: 100%; /* Ensure it takes up full width */
+    margin: 0 auto; /* Center horizontally */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+  }
+  .navbar-brand {
+    text-align: center; /* Center text if needed */
+  }
+}
+
+.navbar-toggler {
+  background-color: #00adb5; /* Toggler button color */
+}
+
+.nav-link-custom {
+  color: #eeeeee;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #00adb5;
+  transform: scale(1.1);
+}
+
+.nav-dropdown-custom {
+  color: #eeeeee;
+  background-color: #393e46; /* Slightly lighter background for dropdown */
+  transition: background-color 0.3s ease;
+}
+
+.nav-dropdown-custom:hover {
+  background-color: #00adb5;
+}
+
+/* Dropdown Animation */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}

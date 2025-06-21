@@ -1,0 +1,42 @@
+.container {
+    background-color: #f8f9fa; /* Light background for the container */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ensure the image covers the area nicely */
+  }
+  
+  .modal-body {
+    max-height: 600px; 
+    overflow-y: auto; 
+  }
+  
+  .custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1040; 
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  

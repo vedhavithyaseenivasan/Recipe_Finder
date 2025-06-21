@@ -1,0 +1,9 @@
+.recipe-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 20px;/* Padding around the entire grid */
+    
+  }
+  
+  

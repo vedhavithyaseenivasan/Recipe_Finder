@@ -1,0 +1,108 @@
+/* Background Image for the Page */
+body {
+  background-image: url('https://img.freepik.com/free-photo/close-up-view-fresh-vegetables-dinner-preparation-table_140725-147802.jpg?t=st=1731234762~exp=1731238362~hmac=26b9df8f1dabd119b37bc734330bb8c07b9791b00a94e756f36f150ab76dc41a&w=996');
+  background-size: cover; /* Ensure the images cover the entire page */
+  background-position: center center;
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  margin: 0;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the container */
+.Authcontainer {
+  max-width: 380px;
+  margin: 80px auto 80px 720px; /* Move the card to the right */
+  padding: 30px;
+  background-color: transparent; /* Cleaner, lighter background */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  position: relative;
+  z-index: 2; /* Make sure the container stays above the background */
+}
+
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  color: #2c3e50; /* Darker, professional color */
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 500;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* Error message styling */
+.text-danger {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Input fields */
+.form-control {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  background-color: #f4f6f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+/* Submit Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8e44ad; /* Purple button */
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #9b59b6; /* Lighter purple on hover */
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.btn:active {
+  background-color: #8e44ad;
+  transform: translateY(0); /* Reset after click */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .Authcontainer {
+    padding: 20px;
+    margin: 40px auto; /* Adjust margins for smaller screens */
+  }
+  
+  h2 {
+    font-size: 1.6rem; /* Slightly smaller heading for mobile */
+  }
+  
+  .form-control {
+    font-size: 0.95rem; /* Adjust input font size for mobile */
+  }
+  
+  .btn {
+    font-size: 1rem; /* Adjust button font size for mobile */
+  }
+}
