@@ -12,7 +12,6 @@
 - Search recipes using:
   - Keywords or ingredients
   - Cuisine filters
-  - Time, calories, or difficulty
 - View recipe details (image, ingredients, instructions, calories, time)
 
 ### 🛠️ Admin Functionality
