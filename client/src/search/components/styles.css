@@ -1,0 +1,266 @@
+.rf-search-page {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.rf-search-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.rf-search-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: rf-fadeIn 0.8s ease-out;
+}
+
+.rf-search-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: var(--rf-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rf-search-subtitle {
+  font-size: 1.25rem;
+  color: var(--rf-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rf-search-form-container {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  animation: rf-slideUp 0.8s ease-out 0.2s both;
+}
+
+.rf-search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--rf-bg-card);
+  border: 1px solid var(--rf-border-light);
+  border-radius: var(--rf-radius-full);
+  padding: 0.5rem;
+  box-shadow: var(--rf-shadow-lg);
+}
+
+.rf-search-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.rf-search-input-icon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--rf-text-tertiary);
+  z-index: 1;
+}
+
+.rf-search-input {
+  width: 100%;
+  padding: 1rem 1.25rem 1rem 3rem;
+  border: none;
+  border-radius: var(--rf-radius-full);
+  background: transparent;
+  color: var(--rf-text-primary);
+  font-size: 1.125rem;
+  outline: none;
+  transition: all var(--rf-duration-normal) ease;
+}
+
+.rf-search-input::placeholder {
+  color: var(--rf-text-tertiary);
+}
+
+.rf-search-input:focus {
+  background: var(--rf-bg-tertiary);
+}
+
+.rf-search-btn {
+  background: var(--rf-gradient-primary);
+  border: none;
+  border-radius: var(--rf-radius-full);
+  padding: 1rem 2rem;
+  color: var(--rf-text-inverse);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--rf-duration-normal) ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  box-shadow: var(--rf-shadow-md);
+}
+
+.rf-search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--rf-shadow-lg);
+}
+
+.rf-search-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.rf-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  animation: rf-fadeIn 1s ease-out 0.4s both;
+}
+
+.rf-filter-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--rf-radius-full);
+  border: 1px solid var(--rf-border-light);
+  background: var(--rf-bg-card);
+  color: var(--rf-text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--rf-duration-normal) ease;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.rf-filter-btn.rf-active {
+  background: var(--rf-gradient-primary);
+  border-color: transparent;
+  color: var(--rf-text-inverse);
+  box-shadow: var(--rf-shadow-md);
+}
+
+.rf-filter-btn:hover {
+  background: var(--rf-bg-tertiary);
+  transform: translateY(-2px);
+  box-shadow: var(--rf-shadow-md);
+}
+
+.rf-filter-btn.rf-active:hover {
+  background: var(--rf-gradient-primary);
+}
+
+.rf-results-container {
+  animation: rf-fadeIn 1.2s ease-out 0.6s both;
+}
+
+.rf-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.25rem;
+  text-align: center;
+}
+
+.rf-loading-spinner-large {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--rf-border-light);
+  border-radius: 50%;
+  border-top-color: var(--rf-primary);
+  animation: rf-spin 1s ease-in-out infinite;
+  margin-bottom: 1.5rem;
+}
+
+.rf-loading-text {
+  color: var(--rf-text-secondary);
+  font-size: 1.125rem;
+}
+
+.rf-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.25rem;
+  text-align: center;
+}
+
+.rf-empty-icon {
+  width: 80px;
+  height: 80px;
+  color: var(--rf-text-tertiary);
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.rf-empty-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--rf-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.rf-empty-description {
+  color: var(--rf-text-secondary);
+  font-size: 1.125rem;
+}
+
+.rf-recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 1.25rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rf-search-container {
+    padding: 2rem 1rem;
+  }
+
+  .rf-search-form {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: var(--rf-radius-xl);
+  }
+
+  .rf-search-input {
+    padding: 1rem 1rem 1rem 2.75rem;
+    font-size: 1rem;
+  }
+
+  .rf-search-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .rf-filters-container {
+    gap: 0.5rem;
+  }
+
+  .rf-filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .rf-recipes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rf-search-container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .rf-recipes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

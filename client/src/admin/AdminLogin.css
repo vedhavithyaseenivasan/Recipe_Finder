@@ -1,0 +1,211 @@
+.rf-admin-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  position: relative;
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.rf-admin-auth-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(239, 68, 68, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(251, 146, 60, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.rf-admin-auth-container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  z-index: 2;
+}
+
+.rf-admin-auth-card {
+  background: var(--rf-bg-card);
+  border: 1px solid var(--rf-border-light);
+  border-radius: var(--rf-radius-2xl);
+  padding: 3rem 2.5rem;
+  box-shadow: var(--rf-shadow-xl);
+  animation: rf-scaleIn 0.6s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.rf-admin-auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #ef4444 0%, #fb923c 100%);
+  animation: rf-shimmer 2s ease-in-out infinite;
+}
+
+.rf-admin-auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.rf-admin-auth-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--rf-radius-xl);
+  background: linear-gradient(135deg, #ef4444 0%, #fb923c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  animation: rf-float 3s ease-in-out infinite;
+  box-shadow: var(--rf-shadow-lg);
+}
+
+.rf-admin-auth-logo svg {
+  width: 40px;
+  height: 40px;
+  color: var(--rf-text-inverse);
+}
+
+.rf-admin-auth-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--rf-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.rf-admin-auth-subtitle {
+  color: var(--rf-text-secondary);
+  font-size: 1rem;
+}
+
+.rf-admin-submit-btn {
+  background: linear-gradient(135deg, #ef4444 0%, #fb923c 100%);
+  border: none;
+  border-radius: var(--rf-radius-lg);
+  padding: 1rem 1.5rem;
+  color: var(--rf-text-inverse);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--rf-duration-normal) ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: var(--rf-shadow-md);
+  width: 100%;
+}
+
+.rf-admin-submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.rf-admin-submit-btn:hover::before {
+  left: 100%;
+}
+
+.rf-admin-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--rf-shadow-lg);
+}
+
+.rf-admin-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.rf-admin-auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--rf-text-secondary);
+}
+
+.rf-admin-auth-link {
+  color: #ef4444;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--rf-duration-normal) ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--rf-radius-sm);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.rf-admin-auth-link:hover {
+  color: #dc2626;
+  text-decoration: none;
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.rf-admin-key-info {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--rf-radius-lg);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.rf-admin-key-info p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+.rf-success-message {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  color: #16a34a;
+}
+
+.rf-admin-links {
+  text-align: center;
+}
+
+.rf-admin-links p {
+  margin: 0.5rem 0;
+}
+
+.rf-admin-note {
+  font-size: 0.875rem;
+  color: var(--rf-text-tertiary);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .rf-admin-auth-card {
+    padding: 2rem 1.5rem;
+    border-radius: var(--rf-radius-xl);
+  }
+
+  .rf-admin-auth-logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .rf-admin-auth-logo svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rf-admin-auth-title {
+    font-size: 1.75rem;
+  }
+}
