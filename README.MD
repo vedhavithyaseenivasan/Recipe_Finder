@@ -28,7 +28,7 @@
 
 ## 🧰 Tech Stack
 
-- **Frontend**: React.js, Bootstrap, React Router DOM, AOS
+- **Frontend**: React.js, Bootstrap, React Router DOM
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas
 - **Authentication & Security**:
