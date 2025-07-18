@@ -17,7 +17,6 @@
 - Admin sign-up and login (OTP-based)
 - Add new recipes with:
   - Title, image, ingredients, procedure
-  - Time and calorie details
 - Edit or delete existing recipes
 - No user-generated submissions (ensures data quality)
 
@@ -33,7 +32,6 @@
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas
 - **Authentication & Security**:
-  - bcryptjs
   - jsonwebtoken
   - OTP via nodemailer (Gmail)
 - **External API**: Edamam Recipe API
