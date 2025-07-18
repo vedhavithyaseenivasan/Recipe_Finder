@@ -11,8 +11,7 @@
 - Log in to a personalized dashboard
 - Search recipes using:
   - Keywords or ingredients
-  - Cuisine filters
-- View recipe details (image, ingredients, instructions, calories, time)
+- View recipe details (image, ingredients, instructions)
 
 ### 🛠️ Admin Functionality
 - Admin sign-up and login (OTP-based)
