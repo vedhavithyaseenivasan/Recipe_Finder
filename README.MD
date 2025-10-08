@@ -144,8 +144,6 @@ The project is built using the **MERN stack** (MongoDB, Express.js, React.js, No
 
 ✅ Multilingual recipe support
 
-✅ Mobile app integration using React Native
-
 ✅ Graph-based analytics dashboard for admin
 
 ---
